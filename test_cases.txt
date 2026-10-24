@@ -1,0 +1,21 @@
+SMART BUS — HACKATHON TEST CHECKLIST
+
+Run `python main.py` and test each flow. Record the actual result after running.
+
+TC-01 Routes: choose 1; all seeded routes and fares display.
+TC-02 Search: choose 2, enter Hyderabad; matching routes appear.
+TC-03 Unknown search: choose 2, enter Atlantis; no routes found.
+TC-04 Booking: choose 3, enter Ahmed, age 24, R101, 2 seats, confirm; total is Rs. 2,400.
+TC-05 Invalid age: enter text or 0; the app asks again.
+TC-06 Invalid seats: enter 0 or more than available; the app rejects/re-prompts.
+TC-07 Invalid route: enter R999; no booking is created.
+TC-08 Availability: after TC-04, R101 has 2 fewer seats.
+TC-09 Persistence: exit and reopen; booking still exists.
+TC-10 Cancel: cancel the booking ID; status becomes Cancelled and seats return.
+TC-11 Cancel twice: second cancellation does not release seats again.
+TC-12 Report: cancelled fare is excluded from confirmed revenue.
+TC-13 Empty booking search: blank filter lists all bookings.
+TC-14 Invalid menu: enter abc or 99; app continues with a helpful message.
+TC-15 Database restart: close/reopen app and confirm routes and booking history persist.
+
+Note: these are planned checks, not claims that every check has been run.
